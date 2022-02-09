@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["error-page"],{"4cf1":function(e,r,n){"use strict";n.r(r);var a=function(){var e=this,r=e.$createElement,n=e._self._c||r;return n("div",{staticClass:"error-page"},[e._v(" 404 ")])},c=[],t={name:"ErrorPageIndex"},s=t,o=n("2877"),i=Object(o["a"])(s,a,c,!1,null,"9fcc22ec",null);r["default"]=i.exports}}]);
+//# sourceMappingURL=error-page.f4606f8c.js.map

@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["course-edit"],{"8fa7":function(e,t,r){"use strict";r.r(t);var s=function(){var e=this,t=e.$createElement,r=e._self._c||t;return r("div",{staticClass:"course-edit"},[r("course-create-or-edit",{attrs:{isEdit:!0,"course-id":e.courseId}})],1)},c=[],o=(r("a9e3"),r("c88f")),i={name:"CourseEdit",props:{courseId:[Number,String]},components:{CourseCreateOrEdit:o["a"]}},u=i,a=r("2877"),n=Object(a["a"])(u,s,c,!1,null,"7d3ffc8d",null);t["default"]=n.exports}}]);
+//# sourceMappingURL=course-edit.d80cea63.js.map

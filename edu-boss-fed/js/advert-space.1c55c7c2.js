@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["advert-space"],{caea:function(e,a,t){"use strict";t.r(a);var n=function(){var e=this,a=e.$createElement,t=e._self._c||a;return t("div",{staticClass:"advert-space"},[e._v(" 广告位管理 ")])},c=[],s={name:"AdvertSpaceIndex"},r=s,p=t("2877"),d=Object(p["a"])(r,n,c,!1,null,"3bb891e0",null);a["default"]=d.exports}}]);
+//# sourceMappingURL=advert-space.1c55c7c2.js.map
