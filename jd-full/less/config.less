@@ -1,0 +1,32 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+/* 点击元素没有背景颜色高亮 */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 长按不弹出上下文菜单 */
+img, a {
+    -webkit-touch-callout: none;
+}
+
+/* 让 input 可以设置样式 */
+input {
+    appearance: none;
+}
+
+@font-face {
+    font-family: JDZhengHT-EN-Regular;
+    src: url(https://wq.360buyimg.com/data/ppms/others/JDZhengHei_01_Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: JDZhengHT-EN-Bold;
+    src: url(https://wq.360buyimg.com/data/ppms/others/JDZhengHei_01_Bold.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}

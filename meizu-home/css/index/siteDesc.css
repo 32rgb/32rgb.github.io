@@ -1,0 +1,46 @@
+.footer {
+    width: 100%;
+    background: #FFF;
+}
+.footer .site-desc-wrapper {
+    border-bottom: 1px solid #E5E5E5;
+}
+.footer .site-desc-wrapper .site-desc {
+    height: 181px;
+}
+.footer .site-desc-wrapper .site-desc > div {
+    float: left;
+    width: 243px;
+    height: 115px;
+    padding: 33px 0;
+    margin-left: 6px;
+    text-align: center;
+}
+.footer .site-desc-wrapper .site-desc > div h5 {
+    font-size: 14px;
+    line-height: 28px;
+}
+.footer .site-desc-wrapper .site-desc > div a {
+    font-size: 12px;
+    line-height: 24px;
+    color: #666;   
+}
+.footer .site-desc-wrapper .site-desc > div a:hover {
+    color: #333;
+}
+.footer .site-desc-wrapper .site-desc .customer-service .service-num {
+    font-size: 24px;
+    color: #1FA6EB;
+    margin-top: 16px;
+}
+.footer .site-desc-wrapper .site-desc .customer-service .service-online {
+    display: inline-block;
+    width: 160px;
+    height: 34px;
+    font-size: 12px;
+    line-height: 34px;
+    color: #FFF;
+    background-color: #1FA7EA;
+    border-radius: 2px;
+    margin-top: 14px;
+}

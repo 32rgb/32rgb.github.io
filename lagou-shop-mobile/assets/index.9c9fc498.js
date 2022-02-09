@@ -1,0 +1,1 @@
+import{_ as a}from"./LayoutFooter.8e5d3438.js";import{o,a4 as s,a0 as e,a6 as t,a1 as r}from"./vendor.e5c0db2e.js";const d=r(" 推荐页面 "),m={setup:r=>(r,m)=>(o(),s(t,null,[d,e(a)],64))};export{m as default};

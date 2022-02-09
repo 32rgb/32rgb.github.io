@@ -1,0 +1,57 @@
+nav {
+  position: relative;
+  width: 100%;
+  height: 6.48rem;
+  overflow: hidden;
+}
+nav .mall-nav-con {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+nav .mall-nav-con .mall-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
+nav .mall-nav-con .mall-nav a {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+nav .mall-nav-con .mall-nav a img {
+  display: block;
+  width: 53.333%;
+  margin: 10px auto 0;
+}
+nav .mall-nav-con .mall-nav a span {
+  display: block;
+  margin: 0.24rem 0 0;
+}
+nav .mall-nav-con .mall-nav-1 {
+  left: 0;
+}
+nav .mall-nav-con .mall-nav-2 {
+  left: 100%;
+}
+nav .mall-nav-ind {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0.2rem;
+  text-align: center;
+  line-height: 0.2rem;
+}
+nav .mall-nav-ind span {
+  display: inline-block;
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 0.08rem;
+}
+nav .mall-nav-ind span.active {
+  background-color: #FA2C19;
+}

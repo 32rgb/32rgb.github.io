@@ -1,0 +1,1 @@
+import{r}from"./index.ff69f4d4.js";const a=a=>r({method:"GET",url:"/products",params:a}),o=a=>r({method:"GET",url:`/product/detail/${a}`}),s=a=>r({method:"GET",url:`/reply/config/${a}`}),t=(a,o)=>r({method:"GET",url:`/reply/list/${a}`,params:o});export{o as a,s as b,t as c,a as g};

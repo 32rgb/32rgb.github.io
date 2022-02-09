@@ -1,0 +1,71 @@
+.tab ul.tab-tags {
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #E8E8E8;
+    font-size: 16px;
+    line-height: 48px;
+    color: #999;
+}
+.tab ul.tab-tags li.tab-tag {
+    float: left;
+    margin-right: 58px;
+}
+.tab ul.tab-tags li.tab-tag.current {
+    height: 46px;
+    border-bottom: 2px solid #000;
+    color: #333;
+}
+.tab ul.tab-tags li.tab-tag a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.tab .notification {
+    color: #999;
+    margin-top: 28px;
+}
+.tab .notification i {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 13px;
+    color: #FFF;
+    text-align: center;
+    background-color: #e6e6e6;
+    border-radius: 9px;
+}
+.tab .notification .message {
+    float: left;
+    margin-right: 21px;
+}
+.tab .notification .confirm {
+    float: left;
+    color: #00B38A;
+}
+
+.tab .tab-card {
+    border: 1px solid #EEE;
+    background-color: #fff;
+}
+.tab .tab-card:hover {
+    box-shadow: 0 0 10px 0 rgb(56 81 76 / 12%);
+}
+
+.tab .load-more {
+    display: block;
+    width: 387px;
+    height: 44px;
+    color: #00B38A;
+    background-color: #fff;
+    border: 1px solid #00B38A;
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center;
+    margin: 16px auto 0;
+    transition: all .2s ease;
+}
+.tab .load-more:hover {
+    color: #fff;
+    background-color: #00B38A;
+}

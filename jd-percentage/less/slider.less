@@ -1,0 +1,74 @@
+@import (reference) "variable.less";
+
+.slider-wrap {
+   height: 187px;
+   position: relative;
+   overflow: hidden;
+
+   .slider-bg {
+       position: absolute;
+       top: 0;
+       left: -25%;
+       height: 145px;
+       width: 150%;
+       background: @lingra-1;
+       border-bottom-left-radius: 100%;
+       border-bottom-right-radius: 100%;
+   }
+
+   ul.slider {
+        list-style-type: none;
+        position: relative;
+        margin-top: 44px;
+
+       li {
+            position: absolute;
+            top: 0;
+            width: 100%;
+
+            &:nth-child(1) {
+                left: 0%;
+            }
+
+            &:nth-child(2) {
+                left: 100%;
+            }
+
+            &:nth-child(3) {
+                left: 200%;
+            }
+
+            a {
+                display: block;
+                padding: 0 3.333%;
+
+                img {
+                    width: 100%;
+                    max-height: 143px;
+                    border-radius: 10px;
+                }
+            }
+       }
+   }
+
+   .slider-ind {
+       position: absolute;
+       width: 100%;
+       bottom: 10px;
+       text-align: center;
+       line-height: 5px;
+
+       span {
+           display: inline-block;
+           width: 5px;
+           height: 5px;
+           background-color: #ffffff99;
+           margin: 0 2px;
+           border-radius: 50%;
+
+           &.active {
+               background-color: @brand-primary;
+           }
+       }
+   }
+}

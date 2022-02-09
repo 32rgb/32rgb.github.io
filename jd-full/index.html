@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        01. 创建项目目录结构，熟悉资源文件
+        jd-percentage
+            |____ css 用于存放 CSS 文件
+                |____ normalize.css 移动端页面 CSS 样式重置
+                |____ index.css 京东移动端首页 CSS 文件
+            |____ images 用于存放项目中使用的各种图片资源，产品图和背景图
+                |____ jd-sprites.png            精灵图 400x400
+                |____ close.png                 顶部应用下载模块关闭按钮 60x60
+                |____ logo1.png                 顶部应用下载模块App图标 80x80
+                |____ s-btn.png                 搜索栏左侧分类图标 40x32
+                |____ logo2.png                 搜索栏JD字样图标 40x30
+                |____ banner01.dpg              活动模块活动图 700x277
+                |____ banner-bottom_01-03.dpg   活动模块底部活动图01-03 250x200
+                |____ nav01-05.webp             导航栏图标 120x120
+                |____ new1-2.dpg                新人专享广告图 374x240
+                |____ nav_bg.webp               ? 750x290
+                |____ banner_bg.jpg             ?
+            |____ less 用于存放 Less 文件
+                |____ index.less 京东移动端首页 Less 文件
+            |____ index.html 京东移动端首页
+     -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 
+        02. 设置视口，引入 normalize.css、index.css，编写页面基本样式
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>多快好省，购物上京东！</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/lib-flexible.js"></script>
+</head>
+<body>
+    <!-- 03-01. 顶部提示 -->
+    <div class="common-tip">
+        <div><img src="images/close.png" alt="关闭"></div>
+        <div><img src="images/logo1.png" alt="JDAPP图标"></div>
+        <div>打开京东APP，购物更轻松</div>
+        <div>立即打开</div>
+    </div>
+    <!-- 顶部提示结束 -->
+    <!-- 03-02. 搜索栏 -->
+    <div class="search">
+        <div class="category-link"><i></i></div>
+        <div class="search-box-wrapper">
+            <form action="#">
+                <div class="search-box">
+                    <i class="search-box-left-jd"></i>
+                    <i class="search-box-left-icon"></i>
+                    <input type="text" placeholder="针式打印机">
+                </div>
+            </form>
+        </div>
+        <div class="login">登录</div>
+    </div>
+    <!-- 搜索栏结束 -->
+    <!-- 内容区开始 -->
+    <div class="content">
+        <!-- 03-03. 幻灯片广告 -->
+        <div class="slider-wrap">
+            <div class="slider-bg"></div>
+            <ul class="slider">
+                <li><a href="#"><img src="images/banner01.dpg" alt="广告"></a></li>
+                <li><a href="#"><img src="images/banner01.dpg" alt="广告"></a></li>
+                <li><a href="#"><img src="images/banner01.dpg" alt="广告"></a></li>
+            </ul>
+            <div class="slider-ind">
+                <span class="active"></span><span></span><span></span>
+            </div>
+        </div>
+        <!-- 幻灯片广告结束 -->
+        <!-- 03-04. 优惠活动 -->
+        <div class="coupon">
+            <img src="images/banner_bottom_01.dpg" alt="优惠活动左图">
+            <img src="images/banner_bottom_02.dpg" alt="优惠活动中图">
+            <img src="images/banner_bottom_03.dpg" alt="优惠活动右图">
+        </div>
+        <!-- 优惠活动结束 -->
+        <!-- 03.05. 导航菜单开始 -->
+        <nav>
+            <div class="mall-nav-con">
+                <div class="mall-nav mall-nav-1">
+                    <a href="#"><img src="images/nav01.webp" alt="京东超市"><span>京东超市</span></a>
+                    <a href="#"><img src="images/nav02.webp" alt="数码电器"><span>数码电器</span></a>
+                    <a href="#"><img src="images/nav03.webp" alt="京东服饰"><span>京东服饰</span></a>
+                    <a href="#"><img src="images/nav04.webp" alt="京东生鲜"><span>京东生鲜</span></a>
+                    <a href="#"><img src="images/nav05.webp" alt="京东到家"><span>京东到家</span></a>
+                    <a href="#"><img src="images/nav01.webp" alt="京东超市"><span>京东超市</span></a>
+                    <a href="#"><img src="images/nav02.webp" alt="数码电器"><span>数码电器</span></a>
+                    <a href="#"><img src="images/nav03.webp" alt="京东服饰"><span>京东服饰</span></a>
+                    <a href="#"><img src="images/nav04.webp" alt="京东生鲜"><span>京东生鲜</span></a>
+                    <a href="#"><img src="images/nav05.webp" alt="京东到家"><span>京东到家</span></a>
+                </div>
+                <div class="mall-nav mall-nav-2">
+                    <a href="#"><img src="images/nav01.webp" alt="京东超市"><span>京东超市</span></a>
+                    <a href="#"><img src="images/nav02.webp" alt="数码电器"><span>数码电器</span></a>
+                    <a href="#"><img src="images/nav03.webp" alt="京东服饰"><span>京东服饰</span></a>
+                    <a href="#"><img src="images/nav04.webp" alt="京东生鲜"><span>京东生鲜</span></a>
+                    <a href="#"><img src="images/nav05.webp" alt="京东到家"><span>京东到家</span></a>
+                    <a href="#"><img src="images/nav01.webp" alt="京东超市"><span>京东超市</span></a>
+                    <a href="#"><img src="images/nav02.webp" alt="数码电器"><span>数码电器</span></a>
+                    <a href="#"><img src="images/nav03.webp" alt="京东服饰"><span>京东服饰</span></a>
+                    <a href="#"><img src="images/nav04.webp" alt="京东生鲜"><span>京东生鲜</span></a>
+                    <a href="#"><img src="images/nav05.webp" alt="京东到家"><span>京东到家</span></a>
+                </div>
+            </div>
+            <div class="mall-nav-ind">
+                <span class="active"></span><span></span>
+            </div>
+        </nav>
+        <!-- 导航菜单结束 -->
+        <!-- 03.06 新人专享 -->
+        <div class="new-member">
+            <a href="#"><img src="images/new1.dpg" alt="新人专享活动"></a>
+            <a href="#"><img src="images/new2.dpg" alt="新人专享活动"></a>
+        </div>
+        <!-- 新人专享结束 -->
+        <!-- 商城楼层导航 -->
+        <div class="floor-nav-wrapper">
+            <div class="floor-nav">
+                <div class="graph-txt">
+                    <div class="txt">
+                        <strong style="color:transparent">来电好货</strong>
+                        <p>正平直邮</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/floor01.dpg" alt="楼层产品">
+                    </div>
+                </div>
+                <div class="graph-txt">
+                    <div class="txt">
+                        <strong>来电好货</strong>
+                        <p>3C大放价</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/floor01.dpg" alt="楼层产品">
+                    </div>
+                </div>
+                <div class="graph-txt">
+                    <div class="txt">
+                        <strong>国朝风尚</strong>
+                        <p>国货正当时</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/floor01.dpg" alt="楼层产品">
+                    </div>
+                </div>
+                <div class="graph-txt">
+                    <div class="txt">
+                        <strong style="color:transparent;">来电好货</strong>
+                        <p>都是你爱的</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/floor01.dpg" alt="楼层产品">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商城楼层导航结束 -->
+
+        <!-- 京东秒杀 -->
+        <div class="sec-kill-wraper">
+            <div class="sec-kill">
+                <div class="header">
+                    <div class="title">京东秒杀</div>
+                    <div class="time">10</div>
+                    <div class="timer">
+                        <span>00</span>
+                        <span class="sperator">:</span>
+                        <span>00</span>
+                        <span class="sperator">:</span>
+                        <span>00</span>
+                    </div>
+                </div>
+                <a class="more" href="#">更多秒杀<i></i></a>
+                <div class="kills">
+                    <div class="kill">
+                        <div class="kill-img"><img src="images/sec-kill-product01.dpg" alt="产品图片"></div>
+                        <div class="kill-price">
+                            <div class="current">
+                                <em>&yen;</em>
+                                <span>26.1</span>
+                            </div>
+                            <div class="original">
+                                <em>&yen;</em>
+                                <span>29</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kill">
+                        <div class="kill-img"><img src="images/sec-kill-product02.dpg" alt="产品图片"></div>
+                        <div class="kill-price">
+                            <div class="current">
+                                <em>&yen;</em>
+                                <span>1199</span>
+                            </div>
+                            <div class="original">
+                                <em>&yen;</em>
+                                <span>1899</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kill">
+                        <div class="kill-img"><img src="images/sec-kill-product03.dpg" alt="产品图片"></div>
+                        <div class="kill-price">
+                            <div class="current">
+                                <em>&yen;</em>
+                                <span>399</span>
+                            </div>
+                            <div class="original">
+                                <em>&yen;</em>
+                                <span>439</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kill">
+                        <div class="kill-img"><img src="images/sec-kill-product04.dpg" alt="产品图片"></div>
+                        <div class="kill-price">
+                            <div class="current">
+                                <em>&yen;</em>
+                                <span>9.6</span>
+                            </div>
+                            <div class="original">
+                                <em>&yen;</em>
+                                <span>30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kill">
+                        <div class="kill-img"><img src="images/sec-kill-product05.dpg" alt="产品图片"></div>
+                        <div class="kill-price">
+                            <div class="current">
+                                <em>&yen;</em>
+                                <span>128</span>
+                            </div>
+                            <div class="original">
+                                <em>&yen;</em>
+                                <span>318</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kill">
+                        <div class="kill-img"><img src="images/sec-kill-product06.dpg" alt="产品图片"></div>
+                        <div class="kill-price">
+                            <div class="current">
+                                <em>&yen;</em>
+                                <span>329.9</span>
+                            </div>
+                            <div class="original">
+                                <em>&yen;</em>
+                                <span>699</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 京东秒杀结束 -->
+
+        <!-- 商城楼层产品推荐2 -->
+        <div class="floor-nav-wrapper floor2-nav-wrapper">
+            <div class="floor-nav">
+                <div class="graph-txt-2">
+                    <div class="txt">
+                        <strong>程序猿</strong>
+                        <p>我的世界你不懂</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/floor02.dpg" alt="楼层产品">
+                        <img src="images/floor02.dpg" alt="楼层产品">
+                    </div>
+                </div>
+                <div class="graph-txt-2">
+                    <div class="txt">
+                        <strong>车漆养护</strong>
+                        <p>DIY养护爱车漆面</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/floor01.dpg" alt="楼层产品">
+                        <img src="images/floor01.dpg" alt="楼层产品">
+                    </div>
+                </div>
+                <div class="graph-txt">
+                    <div class="txt">
+                        <strong>潮流双肩</strong>
+                        <p>潮流双肩包</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/floor02.dpg" alt="楼层产品">
+                    </div>
+                </div>
+                <div class="graph-txt">
+                    <div class="txt">
+                        <strong>极简女包</strong>
+                        <p>通勤必备</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/floor01.dpg" alt="楼层产品">
+                    </div>
+                </div>
+                <div class="graph-txt">
+                    <div class="txt">
+                        <strong>音乐时光</strong>
+                        <p>文娱滋养</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/floor02.dpg" alt="楼层产品">
+                    </div>
+                </div>
+                <div class="graph-txt">
+                    <div class="txt">
+                        <strong>亲子共读</strong>
+                        <p>最美陪伴</p>
+                    </div>
+                    <div class="img">
+                        <img src="images/floor01.dpg" alt="楼层产品">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商城楼层产品推荐2结束 -->
+        <!-- 产品列表 -->
+        <div class="goods-list">
+            <div class="goods-wrapper">
+                <div class="goods">
+                    <img class="product-photo" src="images/goods01.webp" alt="推荐产品">
+                    <div class="product-txt"><span>大码男装2件装夏季宽松纯色胖子短袖T恤男圆领加肥加大码胖人半袖肥佬体恤男微胖上衣 藏青白底小标+黑色红底小标</span></div>
+                    <div class="product-info">
+                        <span class="price">
+                            <em>&yen;</em>
+                            <span class="big-price">143</span>
+                            <span class="small-price">.1</span>
+                        </span>
+                        <span class="price-tag">闪购</span>
+                        <a class="see-similar">看相似</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="plus-price"><em>&yen;</em>137.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-wrapper">
+                <div class="goods">
+                    <img class="product-photo" src="images/goods01.webp" alt="推荐产品">
+                    <div class="product-txt"><span>大码男装2件装夏季宽松纯色胖子短袖T恤男圆领加肥加大码胖人半袖肥佬体恤男微胖上衣 藏青白底小标+黑色红底小标</span></div>
+                    <div class="product-info">
+                        <span class="price">
+                            <em>&yen;</em>
+                            <span class="big-price">143</span>
+                            <span class="small-price">.1</span>
+                        </span>
+                        <span class="price-tag">满减</span>
+                        <a class="see-similar">看相似</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="plus-price"><em>&yen;</em>137.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-wrapper">
+                <div class="goods">
+                    <img class="product-photo" src="images/goods01.webp" alt="推荐产品">
+                    <div class="product-txt"><img class="choosen" src="images/choosen02.png" alt="京东精选"><span>大码男装2件装夏季宽松纯色胖子短袖T恤男圆领加肥加大码胖人半袖肥佬体恤男微胖上衣 藏青白底小标+黑色红底小标</span></div>
+                    <div class="product-info">
+                        <span class="price">
+                            <em>&yen;</em>
+                            <span class="big-price">143</span>
+                            <span class="small-price">.1</span>
+                        </span>
+                        <span class="price-tag">新品</span>
+                        <a class="see-similar">看相似</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="plus-price"><em>&yen;</em>137.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-wrapper">
+                <div class="goods">
+                    <img class="product-photo" src="images/goods01.webp" alt="推荐产品">
+                    <div class="product-txt"><img class="choosen" src="images/choosen03.png" alt="京东精选"><span>大码男装2件装夏季宽松纯色胖子短袖T恤男圆领加肥加大码胖人半袖肥佬体恤男微胖上衣 藏青白底小标+黑色红底小标</span></div>
+                    <div class="product-info">
+                        <span class="price">
+                            <em>&yen;</em>
+                            <span class="big-price">143</span>
+                            <span class="small-price">.1</span>
+                        </span>
+                        <a class="see-similar">看相似</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="plus-price"><em>&yen;</em>137.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-wrapper">
+                <div class="goods">
+                    <img class="product-photo" src="images/goods01.webp" alt="推荐产品">
+                    <div class="product-txt"><img class="choosen" src="images/choosen01.png" alt="京东精选"><span>大码男装2件装夏季宽松纯色胖子短袖T恤男圆领加肥加大码胖人半袖肥佬体恤男微胖上衣 藏青白底小标+黑色红底小标</span></div>
+                    <div class="product-info">
+                        <span class="price">
+                            <em>&yen;</em>
+                            <span class="big-price">143</span>
+                            <span class="small-price">.1</span>
+                        </span>
+                        <span class="price-tag">闪购</span>
+                        <a class="see-similar">看相似</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="plus-price"><em>&yen;</em>137.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-wrapper">
+                <div class="goods">
+                    <img class="product-photo" src="images/goods01.webp" alt="推荐产品">
+                    <div class="product-txt"><img class="choosen" src="images/choosen03.png" alt="京东精选"><span>大码男装2件装夏季宽松纯色胖子短袖T恤男圆领加肥加大码胖人半袖肥佬体恤男微胖上衣 藏青白底小标+黑色红底小标</span></div>
+                    <div class="product-info">
+                        <span class="price">
+                            <em>&yen;</em>
+                            <span class="big-price">143</span>
+                            <span class="small-price">.1</span>
+                        </span>
+                        <a class="see-similar">看相似</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="plus-price"><em>&yen;</em>137.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-wrapper">
+                <div class="goods">
+                    <img class="product-photo" src="images/goods01.webp" alt="推荐产品">
+                    <div class="product-txt"><span>大码男装2件装夏季宽松纯色胖子短袖T恤男圆领加肥加大码胖人半袖肥佬体恤男微胖上衣 藏青白底小标+黑色红底小标</span></div>
+                    <div class="product-info">
+                        <span class="price">
+                            <em>&yen;</em>
+                            <span class="big-price">143</span>
+                            <span class="small-price">.1</span>
+                        </span>
+                        <a class="see-similar">看相似</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="plus-price"><em>&yen;</em>137.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-wrapper">
+                <div class="goods">
+                    <img class="product-photo" src="images/goods01.webp" alt="推荐产品">
+                    <div class="product-txt"><span>大码男装2件装夏季宽松纯色胖子短袖T恤男圆领加肥加大码胖人半袖肥佬体恤男微胖上衣 藏青白底小标+黑色红底小标</span></div>
+                    <div class="product-info">
+                        <span class="price">
+                            <em>&yen;</em>
+                            <span class="big-price">143</span>
+                            <span class="small-price">.1</span>
+                        </span>
+                        <a class="see-similar">看相似</a>
+                    </div>
+                    <div class="product-info">
+                        <span class="plus-price"><em>&yen;</em>137.7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 产品列表结束 -->
+    </div>
+    <!-- 内容区结束 -->
+
+    <!-- tab导航 -->
+    <div class="main-nav">
+        <ul>
+            <li><a href="#"><img src="images/tab01_hover.png" alt="导航选项卡"></a></li>
+            <li><a href="#"><img src="images/tab02.png" alt="导航选项卡"></a></li>
+            <li><a href="#"><img src="images/tab03.png" alt="导航选项卡"></a></li>
+            <li><a href="#"><img src="images/tab04.png" alt="导航选项卡"></a></li>
+            <li><a href="#"><img src="images/tab05.png" alt="导航选项卡"></a></li>
+        </ul>
+    </div>
+    <!-- tab导航结束 -->
+
+    <!-- 底部开始 -->
+    <div class="footer">
+        <ul class="links">
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">客户服务</a></li>
+            <li><a href="#">返回顶部</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="#"><img src="images/footer-icon01.png" alt="底部图标"></a></li>
+            <li><a href="#"><img src="images/footer-icon02.png" alt="底部图标"></a></li>
+            <li><a href="#"><img src="images/footer-icon03.png" alt="底部图标"></a></li>
+        </ul>
+        <div class="copyright">
+            Copyright © 2004-2020 京东JD.com 版权所有
+        </div>
+    </div>
+    <!-- 底部结束 -->
+</body>
+</html>

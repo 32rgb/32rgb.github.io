@@ -1,0 +1,91 @@
+@import (reference) "variable.less";
+@import (inline) "config.less";
+
+body {
+    min-width: @screen-min;
+    max-width: @screen-max;
+    margin: 0 auto;
+    color: @text-color;
+    line-height: @line-height-base;
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    // transform: translate(0,0);
+
+    a {
+        color: @link-color;
+        text-decoration: @link-decoration;
+
+        &:hover {
+            color: @link-hover-color;
+            text-decoration: @link-hover-decoration;
+        }
+    }
+
+    .common-tip {
+        &:extend(.common-tip all);
+    }
+
+    .search {
+        &:extend(.search all);
+    }
+
+    .content {
+        margin-top: 1.8rem;
+        background: @gray-light-4;
+        float: left;
+
+        .slider-wrap {
+            &:extend(.slider-wrap all);
+        }
+    }
+
+    .coupon {
+        &:extend(.coupon all);
+    }
+
+    nav {
+        &:extend(nav all);
+    }
+
+    .new-member {
+        &:extend(.new-member all);
+    }
+
+    .floor-nav-wrapper {
+        &:extend(.floor-nav-wrapper all);
+    }
+
+    .sec-kill-wraper {
+        &:extend(.sec-kill-wraper all);
+    }
+
+    .floor2-nav-wrapper {
+        &:extend(.floor2-nav-wrapper all);
+    }
+       
+    .goods-list {
+        &:extend(.goods-list all);
+    }
+
+    .main-nav {
+        &:extend(.main-nav all);
+    }
+     
+    .footer {
+        &:extend(.footer all);
+    }
+}
+
+// 改行移到顶部输出的 CSS 样式会在顶部
+@import (reference) "common-tip.less";
+@import (reference) "search.less";
+@import (reference) "slider.less";
+@import (reference) "coupon.less";
+@import (reference) "mall-nav.less";
+@import (reference) "new-member.less";
+@import (reference) "floor.less";
+@import (reference) "sec-kill.less";
+@import (reference) "floor2.less";
+@import (reference) "goods-list.less";
+@import (reference) "footer.less";
+@import (reference) "tab-nav.less";

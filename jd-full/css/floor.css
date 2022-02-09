@@ -1,0 +1,76 @@
+.floor-nav-wrapper {
+  width: 100%;
+  height: 5.2rem;
+  padding: 0 0.4rem 0.4rem;
+}
+.floor-nav-wrapper .floor-nav {
+  overflow: hidden;
+  height: 100%;
+  background: #FFF;
+  border-radius: 0.4rem;
+}
+.floor-nav-wrapper .floor-nav .graph-txt {
+  float: left;
+  width: 25%;
+  height: 4.8rem;
+  padding-left: 0.4rem;
+}
+.floor-nav-wrapper .floor-nav .graph-txt .txt {
+  font-family: "PingHei,Lucida Grande,Lucida Sans Unicode,STHeiti,Helvetica,Arial,Verdana,sans-serif";
+  color: #222;
+  margin-top: 0.4rem;
+}
+.floor-nav-wrapper .floor-nav .graph-txt .txt strong {
+  line-height: 0.72rem;
+  font-size: 16px;
+}
+.floor-nav-wrapper .floor-nav .graph-txt .txt p {
+  line-height: 0.72rem;
+  font-size: 12px;
+  color: #666771;
+  margin: 0;
+}
+.floor-nav-wrapper .floor-nav .graph-txt .img {
+  margin-top: 0.4rem;
+}
+.floor-nav-wrapper .floor-nav .graph-txt .img img {
+  display: block;
+  width: 60%;
+}
+.floor-nav-wrapper .floor-nav .graph-txt-2 {
+  float: left;
+  width: 50%;
+  height: 4.8rem;
+}
+.floor-nav-wrapper .floor-nav .graph-txt-2 .txt {
+  font-family: "PingFangSC-Light,PingFang-Medium,PingFangSC-Regular,Helvetica,Droid Sans,Arial,sans-serif";
+  color: #000;
+  padding-left: 0.4rem;
+  margin-top: 0.4rem;
+}
+.floor-nav-wrapper .floor-nav .graph-txt-2 .txt strong {
+  line-height: 0.72rem;
+  font-size: 16px;
+}
+.floor-nav-wrapper .floor-nav .graph-txt-2 .txt p {
+  line-height: 0.72rem;
+  font-size: 12px;
+  margin: 0;
+}
+.floor-nav-wrapper .floor-nav .graph-txt-2 .img {
+  margin-top: 0.4rem;
+  padding: 0 0.56rem;
+  overflow: hidden;
+}
+.floor-nav-wrapper .floor-nav .graph-txt-2 .img > img {
+  float: left;
+  margin: 0.22rem 0.24rem 0;
+}
+.floor-nav-wrapper .floor-nav .graph-txt-2 .img img:nth-child(1) {
+  display: block;
+  width: 30%;
+}
+.floor-nav-wrapper .floor-nav .graph-txt-2 .img img:nth-child(2) {
+  display: block;
+  width: 30%;
+}

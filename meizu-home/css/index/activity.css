@@ -1,0 +1,56 @@
+.activity-container {
+    width: 100%;
+}
+.activity-container .activity-wrapper {
+    height: 170px;
+    padding-top: 6px;
+}
+.activity-container .activity-wrapper .activity {
+    height: 140px;
+    margin-left: -6px;
+}
+.activity-container .activity-wrapper .activity div {
+    float: left;
+    margin-left: 6px;
+}
+.activity-container .activity-wrapper .activity div img {
+    width: 244px;
+    height: 140px;
+}
+.activity-container .activity-wrapper .activity .hot-link {
+    width: 244px;
+    height: 140px;
+    background-color: #F9F9F9;
+}
+.activity-container .activity-wrapper .activity .hot-link a {
+    float: left;
+    width: 122px;
+    height: 55px;
+    padding-top: 15px;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+}
+.activity-container .activity-wrapper .activity .hot-link a:hover {
+    text-decoration: underline;
+}
+.activity-container .activity-wrapper .activity .hot-link i {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: no-repeat center top;
+    background-size: 25px 25px;
+    margin: 0 auto 4px;
+}
+.activity-container .activity-wrapper .activity .hot-link .m-code i {
+    background-image: url(../../images/1450855246-61162.png);
+}
+.activity-container .activity-wrapper .activity .hot-link .trade-in i {
+    background-image: url(../../images/1450855279-64872.png);
+}
+.activity-container .activity-wrapper .activity .hot-link .assurance i {
+    background-image: url(../../images/1450855198-58056.png);
+}
+.activity-container .activity-wrapper .activity .hot-link .buy-back i {
+    background-image: url(../../images/1451960447-93534.png);
+}

@@ -1,0 +1,200 @@
+.footer {
+    height: 353px;
+}
+/* 底部导航 */
+.footer .nav-wrapper {
+    width: 100%;
+    height: 252px;
+    border-top: 1px solid #ebebeb;
+}
+.footer .nav-wrapper .nav {
+    height: 138px;
+    margin-top: 48px;
+}
+.footer .nav-wrapper .nav .platform {
+    float: left;
+    width: 312px;
+    height: 138px;
+    border-right: 1px solid #ebebeb;
+}
+.footer .nav-wrapper .nav .platform .lagou-app, .footer .nav-wrapper .nav .platform .wechat-miniapp {
+    display: block;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #00B38A;
+    margin-bottom: 16px;
+    text-align: center;
+    line-height: 40px;
+    color: #00B38A;
+}
+.footer .nav-wrapper .nav .platform .lagou-app:hover, .footer .nav-wrapper .nav .platform .wechat-miniapp:hover {
+    color: #FFF;
+    background-color: #00B38A;
+}
+.footer .nav-wrapper .nav .platform .lagou-app i {
+    display: inline-block;
+    width: 12px;
+    height: 19px;
+    background: url(../../images/sprite_02.png) no-repeat -150px -219px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.footer .nav-wrapper .nav .platform .lagou-app:hover i {
+    background-position: -182px -219px;
+}
+.footer .nav-wrapper .nav .platform .wechat-miniapp {
+    position: relative;
+}
+.footer .nav-wrapper .nav .platform .wechat-miniapp i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../../images/sprite_02.png) no-repeat -215px -54px;
+    margin-right: 6px;
+}
+.footer .nav-wrapper .nav .platform .wechat-miniapp:hover i {
+    background-position: -173px -54px;
+}
+.footer .nav-wrapper .nav .platform .wechat-miniapp img {
+    display: none;
+    width: 140px;
+    position: absolute;
+    top: 0;
+    left: 190px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+}
+.footer .nav-wrapper .nav .platform .wechat-miniapp:hover img {
+    display: block;
+}
+.footer .nav-wrapper .nav .platform .social {
+    color: #555;
+    width: 180px;
+}
+.footer .nav-wrapper .nav .platform .social .lagou-wechat {
+    position: relative;
+}
+.footer .nav-wrapper .nav .platform .social .lagou-wechat i {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url(../../images/sprite_02.png) no-repeat -114px -185px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.footer .nav-wrapper .nav .platform .social .lagou-wechat:hover i {
+    background-position: -114px -221px;
+}
+.footer .nav-wrapper .nav .platform .social .lagou-wechat img {
+    display: none;
+    width: 140px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);   
+}
+.footer .nav-wrapper .nav .platform .social .lagou-wechat:hover img {
+    display: block;
+}
+.footer .nav-wrapper .nav .platform .social .lagou-weibo {
+    float: right;
+}
+.footer .nav-wrapper .nav .platform .social .lagou-weibo i {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url(../../images/sprite_02.png) no-repeat -214px -20px;
+    vertical-align: middle;
+    margin-right: 6px;  
+}
+.footer .nav-wrapper .nav .platform .social .lagou-weibo:hover i {
+    background-position: -172px -20px;
+}
+
+/* 服务导航 */
+.footer .nav-wrapper .nav .nav-menu {
+    color: #555;
+    line-height: 22px;
+    float: right;
+}
+.footer .nav-wrapper .nav .nav-menu h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.footer .nav-wrapper .nav .nav-menu a {
+    display: block;
+    padding-right: 20px;
+    margin: 10px 0;
+}
+.footer .nav-wrapper .nav .nav-menu .service, .footer .nav-wrapper .nav .nav-menu .help, .footer .nav-wrapper .nav .nav-menu .contact {
+    float: left;
+    width: 250px;
+}
+
+/* 版权信息 */
+.footer .copyright-wrapper {
+    width: 100%;
+    height: 100px;
+    background-color: #FAFAFA;
+    padding-top: 28px;
+}
+.footer .copyright-wrapper .copyright {
+    color: #999;
+    position: relative;
+    height: 58px;
+}
+.footer .copyright-wrapper .copyright a {
+    color: #999;
+}
+.footer .copyright-wrapper .copyright a:hover {
+    color: #333;
+}
+.footer .copyright-wrapper .copyright p {
+    float: left;
+    margin-top: 18px;
+    margin-right: 10px;
+}
+.footer .copyright-wrapper .copyright .gongan {
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    background: url(../../images/sprite_02.png) no-repeat -151px -184px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.footer .copyright-wrapper .copyright .report {
+    float: left;
+    width: 186px;
+    height: 58px;
+    border: 1px solid #E0E0E0;
+    position: relative;
+}
+.footer .copyright-wrapper .copyright .report i {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    margin-left: 20px;
+    width: 20px;
+    height: 24px;
+    background: url(../../images/sprite_02.png) no-repeat -132px -20px;
+}
+.footer .copyright-wrapper .copyright .report p {
+    width: 116px;
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    margin-left: 50px;
+}
+.footer .copyright-wrapper .copyright .footer-icon {
+    display: inline-block;
+    width: 198px;
+    height: 19px;
+    background: url(../../images/footer_lagou_icon.png) no-repeat 0 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -10px;
+}

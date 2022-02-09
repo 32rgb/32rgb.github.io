@@ -1,0 +1,69 @@
+.company-list {
+    margin-top: 70px;
+}
+.company-list .tab-content ul {
+    width: 1216px;
+}
+.company-list .tab-card {
+    float: left;
+    width: 258px;
+    height: 246px;
+    margin: 16px 16px 0 0;
+    padding: 20px 14px 0;
+}
+.company-list .tab-card .company-info {
+    height: 181px;
+    border-bottom: 1px dashed #EAEEED; 
+}
+.company-list .tab-card .company-info p {
+    text-align: center;
+}
+.company-list .tab-card .company-info p.logo img {
+    width: 80px;
+    height: 80px;
+}
+.company-list .tab-card .company-info p.name {
+    margin-top: 14px;
+    font-size: 16px;
+}
+.company-list .tab-card .company-info p.name a:hover {
+    color: #333;
+}
+.company-list .tab-card .company-info p.tags {
+    margin-top: 4px;
+    color: #999;
+}
+.company-list .tab-card .company-info p.slogon {
+    margin-top: 6px;
+    color: #555;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.company-list .tab-card .hr-statistic {
+    height: 32px;
+    margin-top: 16px;
+    text-align: center;
+}
+.company-list .tab-card .hr-statistic a {
+    float: left;
+}
+.company-list .tab-card .hr-statistic a.comment {
+    padding: 0 19px 0 10px;
+    border-right: 1px solid #EDEDED;
+}
+.company-list .tab-card .hr-statistic a.job {
+    padding: 0 21px 0 20px;
+    border-right: 1px solid #EDEDED;
+}
+.company-list .tab-card .hr-statistic a.feedback {
+    padding: 0 10px 0 20px;
+}
+.company-list .tab-card .hr-statistic a .data {
+    color: #00B38A;
+}
+.company-list .tab-card .hr-statistic a .item {
+    font-size: 12px;
+    color: #999;
+}

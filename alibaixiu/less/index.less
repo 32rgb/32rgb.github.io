@@ -1,0 +1,175 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: #fff;
+    .row {
+
+        header {
+            padding-left: 0;
+
+            h1 {
+                margin: 0;
+                background: #3274a3;
+
+                .logo {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+
+                    span {
+                        display: block;
+                        height: 50px;
+                        font-size: 18px;
+                        line-height: 50px;
+                        text-align: center;
+                        color: #FFF;
+                    }
+                }
+            }
+
+            nav {
+                background: #eee;
+                border-bottom: 1px solid #ccc;
+                overflow: hidden;
+
+                a {
+                    display: block;
+                    height: 50px;
+                    padding-left: 30px;
+                    color: #666;
+                    font-size: 16px;
+                    line-height: 50px;
+
+                    &:before {
+                        margin-right: 5px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+        .news {
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0 0 10px;
+                border-bottom: 1px solid #ccc;
+                overflow: hidden;
+
+                li {
+                    float: left;
+                    width: 25%;
+                    height: 128px;
+                    padding-right: 10px;
+                    margin-bottom: 10px;
+                    
+                    &:nth-child(1) {
+                        width: 50%;
+                        height: 266px;
+
+                        a p {
+                            font-size: 20px;
+                            line-height: 34px;
+                        }
+                    }
+
+                    a {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        p {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            padding: 0 10px;
+                            margin: 0;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #FFF;
+                            background-color: rgba(0,0,0,0.7);
+                        }
+                    }
+                }
+            }
+        }
+        
+        .publish {
+            article {
+                padding: 10px 0;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+
+        aside {
+            .banner {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .hot {
+                display: block;
+                padding: 0 10px 10px;
+                border: 1px solid #ccc;
+
+                button {
+                    border-radius: 0;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    
+}
+
+/* 小屏幕及以上 */
+@media screen and (min-width: 768px) {
+    header .logo img {
+        margin: 0 auto;
+    }
+}
+
+/* 小屏 */
+@media screen and (max-width: 991px) {
+    .container .row header nav  {
+        border-bottom: none;
+    }
+    header nav a {
+        background-color: #fff;
+        float: left;
+        width: 20%;
+    }
+}
+
+/* 超小屏 */
+@media screen and (max-width: 767px) {
+    .container .row header nav   a {
+        font-size: 14px;
+    }
+    
+    .container .row main .news ul li {
+        width: 50%;
+        
+        &:nth-child(1) {
+            width: 100%;
+        }
+
+    }
+
+    main .publish article h3 {
+        font-size: 16px;
+    }
+}

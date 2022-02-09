@@ -1,0 +1,26 @@
+body {
+    font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
+    font-size: 14px;
+    color: #333;
+}
+a {
+    color: #555;
+    text-decoration: none;
+}
+a:hover {
+    color: #00b38a;
+}
+.containe {
+    position: relative;
+}
+.section-inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}

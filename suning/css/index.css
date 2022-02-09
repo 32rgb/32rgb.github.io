@@ -1,0 +1,400 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+img,
+a {
+  -webkit-touch-callout: none;
+}
+body {
+  min-width: 12.8rem;
+  font-family: Arial, Helvetica, STHeiTi, sans-serif;
+  font-size: 0.48rem;
+  line-height: 1.5;
+  color: #333;
+  background: #F7F7F7;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+.top-banner {
+  position: fixed;
+  width: 100%;
+  height: 2rem;
+  z-index: 100;
+}
+.top-banner img {
+  display: block;
+  height: 100%;
+}
+.top-banner .close {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.16rem;
+  width: 1rem;
+  height: 1rem;
+  background: url(../images/close.png) no-repeat 0 0;
+  background-size: 0.6rem auto;
+  outline: none;
+  border: none;
+}
+.header {
+  background: #ffdb47;
+  padding-top: 2rem;
+}
+.header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 1.76rem;
+  padding: 0 0.68rem;
+}
+.header .header-top .classify img {
+  display: block;
+  width: 0.72rem;
+  height: 1.2rem;
+}
+.header .header-top .ad {
+  margin-right: 1rem;
+}
+.header .header-top .ad img {
+  display: block;
+  width: 9rem;
+  height: 1.1rem;
+}
+.header .header-top .login img {
+  display: block;
+  width: 0.72rem;
+  height: 1.2rem;
+}
+.header .search {
+  height: 1.84rem;
+  padding: 0 0.48rem;
+  position: relative;
+}
+.header .search a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.header .search i {
+  position: absolute;
+  top: 0.56rem;
+  left: 0.76rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  background: url(../images/search_btn.png) no-repeat 0 0;
+  background-size: 0.72rem auto;
+}
+.header .search form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 14.04rem;
+  height: 100%;
+}
+.header .search form input {
+  display: block;
+  width: 100%;
+  font-size: 0.56rem;
+  height: 1.28rem;
+  padding: 0.06rem 0.4rem 0 1.3rem;
+  border-radius: 0.64rem;
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+.content-wrapper {
+  padding-bottom: 2.2rem;
+}
+.banner {
+  height: 5.2rem;
+  background: url(../images/banner_bg.png) no-repeat 0 0;
+  background-size: auto 5.2rem;
+}
+.banner .banner-wrapper {
+  width: 14.04rem;
+  height: 100%;
+  margin: 0 auto;
+}
+.banner .banner-wrapper ul {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.banner .banner-wrapper ul li {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner .banner-wrapper ul li a {
+  display: block;
+  height: 100%;
+}
+.banner .banner-wrapper ul li a img {
+  width: 100%;
+  height: 5.2rem;
+  border-radius: 0.4rem;
+}
+.banner .banner-wrapper ul li:nth-child(1) {
+  left: 0;
+}
+.banner .banner-wrapper ul li:nth-child(2) {
+  left: 100%;
+}
+.banner .banner-wrapper ul li:nth-child(3) {
+  left: 200%;
+}
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 6.16rem;
+}
+.nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 20%;
+}
+.nav a i {
+  width: 1.68rem;
+  height: 1.68rem;
+  margin: 0.48rem 0.66rem 0;
+  background: no-repeat 0 0;
+  background-size: 1.68rem auto;
+}
+.nav a span {
+  font-size: 0.44rem;
+  line-height: 0.2464rem;
+  margin: 0.1rem 0 0.44rem;
+}
+.nav a:nth-child(1) i {
+  background-image: url(../images/nav_01.png);
+}
+.nav a:nth-child(2) i {
+  background-image: url(../images/nav_02.png);
+}
+.nav a:nth-child(3) i {
+  background-image: url(../images/nav_03.png);
+}
+.nav a:nth-child(4) i {
+  background-image: url(../images/nav_04.png);
+}
+.nav a:nth-child(5) i {
+  background-image: url(../images/nav_05.png);
+}
+.nav a:nth-child(6) i {
+  background-image: url(../images/nav_01.png);
+}
+.nav a:nth-child(7) i {
+  background-image: url(../images/nav_02.png);
+}
+.nav a:nth-child(8) i {
+  background-image: url(../images/nav_03.png);
+}
+.nav a:nth-child(9) i {
+  background-image: url(../images/nav_04.png);
+}
+.nav a:nth-child(10) i {
+  background-image: url(../images/nav_05.png);
+}
+.new-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4.68rem;
+}
+.new-member a:nth-child(1) img {
+  width: 7.4308rem;
+}
+.new-member a:nth-child(3) img {
+  width: 3.706rem;
+}
+.new-member a:nth-child(5) img {
+  width: 3.706rem;
+}
+.new-member .gap {
+  width: 0.0792rem;
+}
+.activity {
+  width: 14.04rem;
+  margin: 0.2rem auto;
+  height: 5.16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 0.04rem solid transparent;
+  border-radius: 0.4rem;
+}
+.activity .cell {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+}
+.activity .cell:nth-child(1) {
+  border-right: 0.04rem solid #F7F7F7;
+}
+.activity .cell a:nth-child(1) {
+  width: 100%;
+}
+.activity .cell a:nth-child(n+2) {
+  width: 50%;
+}
+.activity .cell a .title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.activity .cell a .title-wrapper .title {
+  margin: 0.36rem 0.16rem 0 0.56rem;
+  color: #333;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+.activity .cell a .title-wrapper .count {
+  padding-top: 0.4rem;
+  margin-left: 0.2rem;
+  font-size: 0.48rem;
+}
+.activity .cell a .title-wrapper .count span {
+  background-color: #FFCC00;
+  padding: 0.04rem 0.08rem;
+  height: 0.68rem;
+  line-height: 1.1;
+  border-radius: 0.12rem;
+}
+.activity .cell a .desc {
+  color: 0.48rem;
+  color: #999;
+  font-size: 0.52rem;
+  margin: 0.08rem 0 0 0.52rem;
+}
+.activity .cell .img-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.4rem;
+}
+.activity .cell .img-txt img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.tab {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+}
+.tab a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tab a i {
+  width: 1.0592rem;
+  height: 1.0592rem;
+  margin: 0.26496rem 0 0;
+  background: no-repeat 0 0;
+  background-size: 1.0592rem auto;
+}
+.tab a span {
+  font-size: 0.44rem;
+  color: #999;
+}
+.tab a:nth-child(1) i {
+  background-image: url(../images/tab01.png);
+}
+.tab a:nth-child(2) i {
+  background-image: url(../images/tab02.png);
+}
+.tab a:nth-child(3) i {
+  background-image: url(../images/tab03.png);
+}
+.tab a:nth-child(4) i {
+  background-image: url(../images/tab04.png);
+}
+.tab a:nth-child(5) i {
+  background-image: url(../images/tab05.png);
+}
+.tab a.active span {
+  color: #333;
+  font-weight: bold;
+}

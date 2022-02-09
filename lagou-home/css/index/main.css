@@ -1,0 +1,173 @@
+.main {
+    height: 426px;
+}
+.main .main-wrapper {
+    margin-top: 35px;
+}
+/* 职位类别导航菜单 */
+.main .job-categories {
+    float: left;
+    width: 321px;
+    height: 376px;
+    margin-left: -15px;
+    color: #555;
+}
+.main .job-categories a.featured {
+    color: #00B38A;
+}
+.main .job-categories a:hover {
+    text-decoration: underline;
+}
+.main .job-categories li {
+    width: 321px;;
+    height: 47px;
+    position: relative;
+    z-index: 1;
+}
+.main .job-categories li .job-type {
+    width: 321px;
+    height: 47px;
+    line-height: 47px;
+    position: relative;
+}
+.main .job-categories li .job-type:hover {
+    box-shadow: 0 0 4px 2px rgb(0 0 0 / 9%);
+}
+.main .job-categories li .job-type::after {
+    content: '';
+    display: none;
+    width: 17px;
+    height: 47px;
+    background-color: #FFF;
+    position: absolute;
+    right: -11px;
+    top: 0;
+    z-index: 1;
+}
+.main .job-categories li .job-type:hover::after {
+    display: block;
+}
+.main .job-categories li .job-type .job-type-name {
+    float: left;
+    height: 47px;
+    padding-left: 15px;
+    font-size: 18px;
+    margin-right: 12px;
+    color: #333;
+}
+.main .job-categories li .job-type .hot-jobs {
+    float: left;
+    width: 242px;
+    height: 47px;
+    overflow: hidden;
+}
+.main .job-categories li .job-type .hot-jobs .hot-job {
+    float: left;
+    margin-right: 27px;
+}
+.main .job-categories li .job-type .arrow-right-icon {
+    float: right;
+    width: 6px;
+    height: 11px;
+    background: url(../../images/main_list_arrow.png) no-repeat 0 0;
+    margin: 19px 8px 0 0;
+}
+/*职位子类别*/
+.main .job-categories li .job-type .job-subtype {
+    width: 622px;
+    height: 265px;
+    padding: 20px 22px 0;
+    position: absolute;
+    top: 0;
+    left: 321px;
+    box-shadow: 0 0 4px 2px rgb(0 0 0 / 9%);
+    display: none;
+    background-color: #fff;
+}
+.main .job-categories li .job-type:hover .job-subtype {
+    display: block;
+}
+.main .job-categories li .job-type .job-subtype dl {
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.main .job-categories li .job-type .job-subtype dt {
+    margin-bottom: 19px;
+    color: #333;
+}
+.main .job-categories li .job-type .job-subtype dd {
+    float: left;
+    padding-right: 13px;
+    border-right: 1px solid #000;
+    margin-right: 13px;
+    margin-bottom: 19px;
+}
+.main .job-categories li .job-type .job-subtype dd:last-child {
+    border-right: none;
+}
+/* 轮播 */
+.main .main-wrapper .carousel {
+    width: 840px;
+    height: 346px;
+    float: right;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.main .main-wrapper .carousel .carousel-img {
+    width: 5000px;
+}
+.main .main-wrapper .carousel .carousel-img li {
+    float: left;
+}
+.main .main-wrapper .carousel .carousel-img li img {
+    width: 840px;
+    height: 346px;
+}
+.main .main-wrapper .carousel .last {
+    width: 48px;
+    height: 44px;
+    background: url(../../images/banner_arrow_left.png) no-repeat 15px 5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -22px;
+}
+.main .main-wrapper .carousel .last:hover {
+    background-image: url(../../images/banner_arrow_left_highlight.png);
+}
+.main .main-wrapper .carousel .next {
+    width: 48px;
+    height: 44px;
+    background: url(../../images/banner_arrow_right.png) no-repeat 15px 5px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -22px;
+}
+.main .main-wrapper .carousel .next:hover {
+    background-image: url(../../images/banner_arrow_right_highlight.png);
+}
+.main .main-wrapper .carousel .carousel-idx {
+    width: 75px;
+    height: 6px;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    line-height: 0px;
+    margin-left: -37px;
+}
+.main .main-wrapper .carousel .carousel-idx i {
+    display: inline-block;
+    width: 7px;
+    height: 6px;
+    margin: 0 4px;
+    background-color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    border-radius: 3px;
+}
+.main .main-wrapper .carousel .carousel-idx i.current {
+    width: 13px;
+    margin: 0 1px;
+    background-color: rgba(255,255,255,1);
+}

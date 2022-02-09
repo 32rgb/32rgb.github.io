@@ -1,0 +1,12 @@
+.new-member {
+  margin: 0.4rem;
+  overflow: hidden;
+}
+.new-member a {
+  float: left;
+  width: 50%;
+}
+.new-member a img {
+  display: block;
+  width: 100%;
+}

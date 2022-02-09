@@ -1,0 +1,146 @@
+/* 登录/注册表单模块 */
+.logister {
+    width: 100%;
+    background-color: #00B38A;
+}
+.logister-wrapper {
+    height: 120px;
+    background: url(../../images/logo_ad.png) no-repeat 0 0;
+    background-size: 228px 120px;
+}
+/* 左侧标语 */
+.logister-wrapper .slogon {
+    float: left;
+    width: 335px;
+    padding-top: 35px;
+    margin-left: 237px;
+    color: #FFF;
+    font-family: "PingFangSC-Medium";
+}
+.logister-wrapper .slogon img {
+    width: 335px;
+    height: 31px;
+}
+/* 右侧登录注册表单 */
+.logister-wrapper .logister-form {
+    float: right;
+    width: 485px;
+    height: 35px;
+    margin-top: 42px;
+    line-height: 35px;
+}
+.logister-wrapper .logister-form .tel {
+    float: left;
+    width: 212px;
+    margin-right: 8px;
+    background-color: #fff;
+}
+.logister-wrapper .logister-form .tel .area-code {
+    float: left;
+    position: relative;
+    width: 77px;
+    z-index: 1;
+}
+.logister-wrapper .logister-form .tel .area-code:hover .area-code-opts {
+    display: block;
+}
+.logister-wrapper .logister-form .tel .area-code .area-code-sel {
+    display: inline-block;
+    width: 57px;
+    height: 35px;
+    padding-left: 10px;
+    margin-right: 10px;
+    background: url(../../images/arrow_down_small.png) no-repeat center right;
+    cursor: pointer;
+}
+/* 区域号码选择下拉列表 */
+.logister-wrapper .logister-form .tel .area-code .area-code-opts {
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    width: 214px;
+    height: 288px;
+    border: 1px solid #EEE;
+    overflow: auto;
+    cursor: pointer;
+    display: none;
+    background-color: #fff;
+}
+.logister-wrapper .logister-form .tel .area-code .area-code-opts dt {
+    height: 36px;
+    padding-left: 12px;
+    color: #999;
+    background-color: #FBFBFB;
+}
+.logister-wrapper .logister-form .tel .area-code .area-code-opts dd {
+    height: 35px;
+    padding-left: 12px;
+    color: #333;
+    background-color: #FFF;
+}
+.logister-wrapper .logister-form .tel .area-code .area-code-opts dd:hover {
+    color: #00b38a;
+    background-color: #F4F4F4;
+}
+.logister-wrapper .logister-form .tel .area-code .area-code-opts dd .area-code-opt-name {
+    float: left;
+}
+.logister-wrapper .logister-form .tel .area-code .area-code-opts dd .area-code-opt-code {
+    float: right;
+    margin-right: 12px;
+}
+.logister-wrapper .logister-form .tel .area-code .area-code-opts .tip {
+    color: #B5B5B5;
+    line-height: 20px;
+    margin: 40px 12px;
+}
+.logister-wrapper .logister-form .tel .tel-num {
+    display: inline-block;
+    width: 135px;
+    height: 35px;
+}
+/* 验证码 */
+.logister-wrapper .logister-form .yzm {
+    float: left;
+    width: 146px;
+    height: 35px;
+    margin-right: 8px;
+}
+.logister-wrapper .logister-form .yzm .yzm-num {
+    float: left;
+    width: 84px;
+    height: 35px;
+    padding-left: 10px;
+}
+.logister-wrapper .logister-form .yzm .get-yzm-btn {
+    float: left;
+    width: 52px;
+    text-align: center;
+    color: #00B38A;
+    background-color: #FFF;
+    position: relative;
+}
+.logister-wrapper .logister-form .yzm .get-yzm-btn::before {
+    position: absolute;
+    top: 50%;;
+    left: 0;
+    margin-top: -6px;
+    content: '';
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #d5dadf;
+}
+/* 登录/注册按钮 */
+.logister-wrapper .logister-form .logister-btn {
+    float: left;
+    width: 105px;
+    height: 33px;
+    border: 1px solid #FFF;
+    text-align: center;
+    color: #FFF;
+    background-color: #00B38A;
+}
+.logister-wrapper .logister-form .logister-btn:hover {
+    background-color: #0DCA9F;
+}

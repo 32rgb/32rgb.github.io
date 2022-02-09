@@ -1,0 +1,43 @@
+.common-tip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  /* 
+        width: auto; 的计算规则
+        没有定位之前 display: block，应该独占一行
+        定位之后，width 变成了类似 display: inline-block 的盒子，宽度由内容决定
+     */
+  height: 1.8rem;
+  color: #FFF;
+  background: #333;
+  font-size: 14px;
+  line-height: 1.8rem;
+  text-align: center;
+}
+.common-tip > div {
+  float: left;
+}
+.common-tip > div:nth-child(1) {
+  width: 8%;
+}
+.common-tip > div:nth-child(1) img {
+  width: 0.4rem;
+  vertical-align: middle;
+}
+.common-tip > div:nth-child(2) {
+  width: 10%;
+}
+.common-tip > div:nth-child(2) img {
+  width: 1.2rem;
+  vertical-align: middle;
+}
+.common-tip > div:nth-child(3) {
+  width: 57%;
+}
+.common-tip > div:nth-child(4) {
+  float: right;
+  width: 25%;
+  background: #F63515;
+}

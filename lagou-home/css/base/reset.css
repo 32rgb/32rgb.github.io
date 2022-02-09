@@ -1,0 +1,75 @@
+html {
+    color: #000;
+    background: #FFF;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, p {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: 0; /* IE10- 浏览器中，链接图片默认带有颜色边框 */
+}
+ol, ul {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;  /* 浏览器默认为不同标题设置不同大小字号 */
+    font-weight: normal; /* 浏览器默认使用粗体 */
+}
+i {
+    font-style: normal; /* 浏览器默认使用斜体 */
+}
+input {
+    font-family: inherit; /* Chrome 使用 Arial */
+    font-size: inherit; /* Chrome 使用 13.3333px */
+    font-weight: inherit; /* Chrome 使用 400 */
+    outline: none; /* Chrome 使用 2px 轮廓线 */
+    border: 0; /* 在input获得焦点后，Chrome 使用 1px 边框 */
+}
+
+/* 其他一些在这个项目中没有使用到的标签的默认样式重置 */
+textarea, fieldset, pre, code, blockquote, th, td  {
+    margin: 0;
+    padding: 0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+fieldset {
+    border:0
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal
+}
+caption,th {
+	text-align:left
+}
+em {
+	font-style: normal;
+}
+q:before,q:after {
+	content:''
+}
+abbr,acronym {
+	border:0;
+	font-variant:normal
+}
+sup {
+	vertical-align:text-top
+}
+sub {
+	vertical-align:text-bottom
+}
+textarea,select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	*font-size:100%;
+	outline: none;
+	border: 0;
+}
+legend {
+	color:#000
+}

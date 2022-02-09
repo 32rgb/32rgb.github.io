@@ -1,0 +1,142 @@
+.position-list .tab-content ul {
+    width: 1215px;
+}
+.position-list .tab-card {
+    float: left;
+    width: 351px;
+    height: 174px;
+    margin: 16px 16px 0 0;
+    padding: 24px 18px 0;
+}
+/* 职位基本信息 */
+.position-list .tab-card .basic-info {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #EAEEED;
+}
+.position-list .tab-card .basic-info h3.title {
+    float: left;
+    font-size: 16px;
+    margin-right: 9px;
+}
+.position-list .tab-card .basic-info h3.title a {
+    display: block;
+    color: #333;
+    max-width: 117px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.position-list .tab-card .basic-info h3.title a:hover {
+    color: #333;
+}
+.position-list .tab-card .basic-info .info {
+    height: 26px;
+}
+.position-list .tab-card .basic-info .info span.pub-time {
+    float: left;
+    color: #999;
+}
+.position-list .tab-card .basic-info .info .chat_hr{
+    position: relative;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    vertical-align: middle;
+    background: url(../../images/icon_chat.png) no-repeat 0 0;
+    cursor: pointer;
+}
+.position-list .tab-card .basic-info .info .chat_hr:hover .hr-card{
+    display: block;
+}
+.position-list .tab-card .basic-info .info .chat_hr .hr-card {
+    display: none;
+    position: absolute;
+    top: -28px;
+    left: 44px;
+    width: 304px;
+    height: 151px;
+    padding: 16px 16px 0 16px;
+    background-color: #fff;
+    border: 1px solid #EAEEED;
+    box-shadow: 1px 1px 2px #F2F2F2;
+}
+.position-list .tab-card .basic-info .info .chat_hr .hr-card:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -8px;
+    width: 14px;
+    height: 14px;
+    background-color: #FFF;
+    border-left: 1px solid #EAEEED;
+    border-bottom: 1px solid #EAEEED;
+    transform: rotate(45deg);
+}
+.position-list .tab-card .basic-info .info .chat_hr .hr-card .hr-info {
+    position: relative;
+    float: left;
+    width: 181px;
+    height: 63px;
+    margin: 0 13px 13px 0;
+}
+.position-list .tab-card .basic-info .info .chat_hr .hr-card .hr-info img {
+    float: left;
+    width: 63px;
+    height: 63px;
+    margin-right: 13px;
+}
+.position-list .tab-card .basic-info .info .chat_hr .hr-card .hr-info .name {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.position-list .tab-card .basic-info .info .chat_hr .hr-card .hr-info .title {
+    color: #666;
+}
+.position-list .tab-card .basic-info .info .chat_hr .hr-card > p{
+    float: left;
+    width: 181px;
+    color: #333;
+}
+.position-list .tab-card .basic-info .info .chat_hr .hr-card .qr-code {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.position-list .tab-card .basic-info .info span.salary {
+    float: right;
+    font-size: 16px;
+    color: #FA6041;
+}
+.position-list .tab-card .basic-info .requirement {
+    margin-top: 4px;
+    color: #777;
+}
+.position-list .tab-card .basic-info .keywords {
+    margin-top: 10px;
+    color: #999;
+}
+.position-list .tab-card .basic-info .keywords span.keyword {
+    float: left;
+    width: 71px;
+    height: 26px; 
+    border: 1px solid #F0F0F0;
+    margin-right: 10px; 
+    line-height: 26px;
+    text-align: center;
+    border-radius: 3px;
+}
+/* 雇主概要信息 */
+.position-list .tab-card .employer-info {
+    margin-top: 15px;
+}
+.position-list .tab-card .employer-info img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+}
+.position-list .tab-card .employer-info .keywords {
+    color: #999;
+}

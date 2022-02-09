@@ -1,0 +1,1 @@
+import{r as e}from"./index.ff69f4d4.js";const r=()=>e({method:"GET",url:"/verify_code"}),a=r=>e({method:"POST",url:"/register/verify",data:r}),o=r=>e({method:"POST",url:"/login",data:r}),t=r=>e({method:"POST",url:"/login/mobile",data:r}),d=()=>e({method:"GET",url:"/user"});export{t as a,a as b,d as c,r as g,o as l};

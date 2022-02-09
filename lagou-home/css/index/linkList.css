@@ -1,0 +1,30 @@
+.link-list {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.link-list .tab ul.tab-tags li.tab-tag {
+    margin-right: 25px;
+    color: #333;
+}
+.link-list .tab .tab-content {
+    width: 1200px;
+    margin-top: 26px;
+    line-height: 28px;
+}
+.link-list .tab .tab-content .links {
+    width: 1128px;
+    float: left;
+}
+.link-list .tab .tab-content .links a {
+    margin-right: 18px;
+    white-space: nowrap;
+}
+.link-list .tab .tab-content .links a:hover {
+    text-decoration: underline;
+}
+.link-list .tab .tab-content .switch {
+    width: 50px;
+    float: right;
+    color: #999;
+    background: url(../../images/arrow_down.png) no-repeat right center;
+}

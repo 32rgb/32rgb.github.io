@@ -1,0 +1,28 @@
+body {
+   font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica; 
+   font-size: 14px;
+   color: #333;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    color: #333;
+}
+.section-inner {
+    width: 1248px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.cut-word {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

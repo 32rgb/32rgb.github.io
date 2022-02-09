@@ -1,0 +1,62 @@
+.slider-wrap {
+  height: 7.48rem;
+  position: relative;
+  overflow: hidden;
+}
+.slider-wrap .slider-bg {
+  position: absolute;
+  top: 0;
+  left: -25%;
+  height: 5.8rem;
+  width: 150%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f1503b), color-stop(50%, #c82519));
+  background: linear-gradient(0deg, #f1503b, #c82519 50%);
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+.slider-wrap ul.slider {
+  list-style-type: none;
+  position: relative;
+  margin-top: 1.76rem;
+}
+.slider-wrap ul.slider li {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.slider-wrap ul.slider li:nth-child(1) {
+  left: 0%;
+}
+.slider-wrap ul.slider li:nth-child(2) {
+  left: 100%;
+}
+.slider-wrap ul.slider li:nth-child(3) {
+  left: 200%;
+}
+.slider-wrap ul.slider li a {
+  display: block;
+  padding: 0 3.333%;
+}
+.slider-wrap ul.slider li a img {
+  width: 100%;
+  max-height: 5.72rem;
+  border-radius: 0.4rem;
+}
+.slider-wrap .slider-ind {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+  line-height: 0.2rem;
+}
+.slider-wrap .slider-ind span {
+  display: inline-block;
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: #ffffff99;
+  margin: 0 0.08rem;
+  border-radius: 50%;
+}
+.slider-wrap .slider-ind span.active {
+  background-color: #FA2C19;
+}

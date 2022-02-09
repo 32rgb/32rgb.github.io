@@ -1,0 +1,56 @@
+.category-container {
+    width: 100%;
+    background-color: #fff;
+}
+.category-container .category-wrapper {
+    position: relative;
+    z-index: 100;
+    height: 0;
+}
+.category-container .category-wrapper .category {
+    width: 244px;
+    height: 480px;
+}
+.category-container .category-wrapper .category .category-type {
+    width: 244px;
+    height: 480px;
+    background-color: rgb(255, 255, 255, 0.6);
+}
+.category-container .category-wrapper .category .category-type a {
+    color: #3A3A3A;
+}
+.category-container .category-wrapper .category .category-type a:hover {
+    text-decoration: underline;
+    color: #1FA6EB;
+}
+.category-container .category-wrapper .category .category-type h2 {
+    padding-top: 26px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+.category-container .category-wrapper .category .category-type ul li {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 30px;
+    width: 100%;
+    height: 56px;
+}
+.category-container .category-wrapper .category .category-type ul li:hover .category-content {
+    display: block;
+}
+.category-container .category-wrapper .category .category-type ul li a {
+    display: inline-block;
+    line-height: 56px;
+}
+.category-container .category-wrapper .category .category-type ul li:hover {
+    background-color: #FFF;
+}
+.category-container .category-wrapper .category .category-type ul li .category-content {
+    width: 498px;
+    height: 500px;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 244px;
+    display: none;
+}

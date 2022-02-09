@@ -1,0 +1,12 @@
+.back-top {
+    display: inline-block;
+    width: 28px;
+    height: 46px;
+    background: url(../../images/backtop.png) no-repeat 0 0;
+    position: fixed;
+    right: 293px;
+    bottom: 88px;
+}
+.back-top:hover {
+    background-position: -38px 0;
+}

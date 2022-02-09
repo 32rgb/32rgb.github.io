@@ -1,0 +1,57 @@
+.footer {
+  color: #848689;
+  float: left;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.footer .links {
+  padding: 0.7936rem 24.8px;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  border-width: 0.04rem 0 0.04rem 0;
+  border-style: solid;
+  border-color: #d7d7d7;
+}
+.footer .links li {
+  float: left;
+  height: 100%;
+  width: 25%;
+  text-align: center;
+  padding: 0 0.08rem;
+  margin: 0;
+}
+.footer .links li a {
+  display: block;
+  width: 100%;
+  font-size: 0.72rem;
+}
+.footer .links li:nth-last-child(n+2) a {
+  border-right: 0.04rem solid #d7d7d7;
+}
+.footer .icons {
+  list-style: none;
+  padding: 0.16rem 0.4rem;
+  margin: 0;
+  overflow: hidden;
+  border-bottom: 0.04rem solid #d7d7d7;
+}
+.footer .icons li {
+  float: left;
+  width: 33.33%;
+}
+.footer .icons li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.footer .icons li a img {
+  display: inline-block;
+  width: 3rem;
+  height: auto;
+}
+.footer .copyright {
+  font-size: 9px;
+  text-align: center;
+  padding: 0.4rem 0;
+}
